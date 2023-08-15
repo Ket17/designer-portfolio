@@ -1,0 +1,550 @@
+:root {
+    --primary-text-color: #959595;
+    --secondary-text-color: #DEDEDE;
+    --white-text-color: #ffffff;
+    --background-button-color: #9D9D9D;
+    --accent-color: #959595;
+
+    --work-page-title-color: #DEDEDE;
+    --work-page-main-ctext-color:
+}
+
+/*переробити 
+шрифти боді,колір .... - це не заголовки */
+
+body {
+    background-color: #DBDBDB;
+    color: var(--primary-text-color);
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    letter-spacing: -0.5px;
+
+    margin: 0;
+
+}
+
+.container {
+    width: 1248px;
+
+    padding-left: 96px;
+    padding-right: 96px;
+    background-color: #292929;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+
+}
+
+h1,
+h2,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.title {
+
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    padding-top: 240px;
+    margin-bottom: 65px;
+}
+
+.header-container {
+    display: flex;
+    background-color: rgba(50, 50, 50, 0.9);
+
+
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    margin-right: 818px;
+}
+
+.logo.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo.link:hover,
+.logo.link:focus {
+    color: var(--accent-color);
+
+}
+
+
+
+.icon-logo {
+
+    margin-right: 11px;
+    fill: currentColor;
+}
+
+.icon-logo:hover,
+.icon-logo:focus {
+    fill: var(--accent-color);
+}
+
+.nav-item .link {
+    color: var(--secondary-text-color);
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 56px;
+}
+
+.nav-item,
+.button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.nav-item .link:hover,
+.nav-item .link:focus {
+    color: var(--accent-color);
+}
+
+.main.title {
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: var(--secondary-text-color);
+    padding-top: 129px;
+    text-align: left;
+    margin-bottom: 24px;
+
+}
+
+.main-title-container {
+    display: block;
+    width: 600px;
+
+}
+
+
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+
+    border-radius: 4px;
+    background-color: #292929;
+}
+
+
+
+
+.hero-img {
+    position: absolute;
+    left: 838px;
+    top: 209px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.hero-description-container {
+
+    width: 480px;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+
+
+
+.button {
+
+    cursor: pointer;
+    color: var(--white-text-color);
+    font-family: inherit;
+    background-color: var(--background-button-color);
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 4px;
+    padding: 19px 101px;
+}
+
+.button:hover,
+.button:focus {
+    color: #292929;
+    background-color: var(--accent-color);
+    box-shadow: inset 6px 6px 6px 3px rgba(68, 64, 64, 0.3)
+}
+
+.button-icon {
+    margin-right: 16px;
+    fill: #ffffff;
+}
+
+
+
+.featured-work-title {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    padding-top: 157px;
+    margin-bottom: 80px;
+
+    text-align: left;
+    color: var(--secondary-text-color) 0, 7;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-arrow {
+    margin-right: 32px;
+
+}
+
+/*
+.featured-work-title::before {
+    width: 32px;
+    top: 8px;
+    left: 8px;
+        height: 0px;
+        content: '';
+        flex: none;
+            order: 0;
+            flex-grow: 0;
+    border: 1px solid #DEDEDE;
+        transform: rotate(90deg);
+        margin-right: 32px;
+}
+*/
+
+
+
+.featured-work-item {
+    display: block;
+    max-width: 612px;
+
+}
+
+
+
+
+.featured-work-item:nth-child(-n+2) {
+    margin-bottom: 24px;
+}
+
+.featured-work-item:nth-child(2n+1) {
+    margin-right: 24px;
+}
+
+.featured-work-list {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+/*
+.featured-work-item.fist {
+    position: absolute;
+}
+*/
+
+
+.featured-work-item.second,
+.featured-work-item.fourd {
+    position: relative;
+    top: 138px;
+
+}
+
+.featured-work-item.fourd {
+    margin-bottom: 138px;
+}
+
+.featured-link:hover,
+.featured-link:focus {
+    /*!!!!!!!!!!!!!!*/
+    fill: navy;
+    border: 1px solid navy;
+}
+
+.visual-explorations-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+
+}
+
+.visual-explorations-item {
+    display: flex;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    flex-basis: calc((100% - 72px) / 3);
+}
+
+.visual-explorations-item .link:hover,
+.visual-explorations-item .link:focus {
+    fill: navy;
+    border: 1px solid navy;
+    /*!!!!!!!!!!!!!!*/
+}
+
+/*.visual-explorations-item:nth-child(3n+1) {
+    margin-bottom: 24px;
+}
+*/
+
+.personal-projects-list {
+    display: flex;
+    margin-right: -24px;
+}
+
+.personal-projects-item {
+    display: flex;
+    margin-right: 24px;
+    flex-basis: calc((100% - 72px) / 3);
+}
+
+.personal-projects-item .link:hover,
+.personal-projects-item .link:focus {
+    fill: navy;
+    border: 1px solid navy;
+    /*!!!!!!!!!!*/
+}
+
+.contacting .container {
+
+    padding-bottom: 119px;
+}
+
+
+.contacting .title {
+    margin-bottom: 24px;
+}
+
+
+.contacting p {
+    text-align: center;
+    margin-left: auto;
+
+    margin-bottom: 46px;
+    white-space: pre-wrap;
+
+
+}
+
+.contacting .button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.underline-copyright span {
+    color: var(--white-text-color);
+}
+
+.underline-copyright {
+    font-size: 16px;
+    padding-top: 48px;
+    margin-bottom: 36px;
+    margin-right: 688px;
+}
+
+.underline .container {
+    border-top: solid 1px #696969;
+    display: flex;
+
+
+}
+
+.social-item {
+    display: flex;
+    fill: #959595;
+}
+
+
+
+.social-icon {
+    margin-top: 49px;
+    fill: #959595;
+}
+
+.social-icon:hover {
+    fill: #ffffff;
+
+}
+
+/*.social-item-link:hover,
+.social-item-link:focus {
+    fill: navy;
+}
+*/
+
+.social-item:not(:last-child) {
+    margin-right: 43px;
+}
+
+
+
+/* --------------   Work 2  ------------------------------------*/
+
+.work-header {
+    background-image: ;
+}
+
+.covibe .pre {
+
+    padding-top: 0;
+    white-space: pre;
+
+
+}
+
+.covibe-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.covibe-title {
+    padding-top: 128px;
+
+}
+
+.covibe-list-title {
+    margin-bottom: 12px;
+}
+
+.covibe-list-item {
+    display: block;
+
+}
+
+.solution-list {
+    display: block;
+}
+
+.work-page-title {
+    color: var(--secondary-text-color) 0, 7;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+
+.solution-title {
+
+    letter-spacing: 2px;
+}
+
+.work-page-description {
+    color: var(--white-text-color);
+    font-size: 32px;
+    line-height: 54px;
+
+}
+
+.conclusion .work-page-description {
+    color: var(--secondary-text-color);
+}
+
+.next-case {
+    text-align: center;
+    padding-top: 244px;
+    padding-bottom: 154px;
+
+}
+
+.covibe-list-description {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 290px;
+}
+
+
+.launch-prototype h2 {
+    padding-top: 88px;
+    margin-bottom: 112px;
+}
+
+.conclusion h2 {
+    padding-top: 216px;
+}
+
+.conclusion p {
+    margin-bottom: 128px;
+}
